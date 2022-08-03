@@ -123,6 +123,10 @@ img {
     padding-top: 32px;
     padding-bottom: 32px;
 }
+.header-link:hover,
+.header-link:focus {
+    color: var(--color-blue);
+}
 
 .logo {
     margin-right: 93px;
@@ -272,17 +276,18 @@ img {
 
 /* --- studio [home] page --- */
 .intro {
-    background-color: var(--primary-background-color-dark);
-    top: 80px;
-}
-
-.intro-container {
     padding: 200px 0 200px 0;
     text-align: center;
     max-width: 1600px;
-    background: rgba(47, 48, 58, 0.4);
-    background-image: url(../images/Img.jpg);
     margin: 0 auto;
+    background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/Img.jpg);
+    background-color: var(--primary-background-color-dark);
+    top: 80px;
 }
 
 .hero-title {
